@@ -1,8 +1,9 @@
 import StarRatingComponent from "react-star-rating-component";
 import "./moviecard.css";
 import React from 'react'
-
+import { Link } from "react-router-dom";
 const Moviecard = ({movie}) => {
+  
   return (
     <div className="box">
   <div className="container">
@@ -49,30 +50,17 @@ const Moviecard = ({movie}) => {
             <div className="col2">
               
               <img src={movie.posterURL} className="movie-img"  /><br/>
-              <div className="watch-btn">
-                
-                <h3>
-                 WATCH TRAILER
-                  
-                </h3>
-                
+              <div className="watch-btn"> 
+                <Link to={`/trailer/${movie.id}`}><h3>TRAILER </h3></Link>
               </div>
             </div>
-          
-             
-            
           </div>
         </div>
       </div>
     </div>
     </div>
-  
-    
-  
 </div>
-
   )
 }
-
 export default Moviecard
 

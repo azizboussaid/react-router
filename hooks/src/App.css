@@ -1,5 +1,11 @@
+*{
+  background-size: cover;
+}
+
+
 .App {
   text-align: center;
+  background-size: cover;
 
 }
 .kk{
@@ -7,6 +13,15 @@
   color:red;
   font-size: 70px;
   font-style: italic;
+}
+.desc {
+  display: flex;
+  height: 700px;
+  flex-direction:column;
+  align-items: center;
+  color: antiquewhite;
+  background-size: cover;
+
 }
 
 
@@ -17,7 +32,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0e0f11;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,6 +44,7 @@
 
 .App-link {
   color: #61dafb;
+  background-size: cover;
 }
 
 @keyframes App-logo-spin {
