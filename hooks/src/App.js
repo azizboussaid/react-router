@@ -86,9 +86,11 @@ const App = () => {
             
                 <Search getWord={getWord} getRate={getRate} />
                 <Routes>
+                     {/* SHOW THIS TWO COMPONENTS IF WE ARE IN THE ROOT PATH */}
                     <Route path='/' element={<><MovieList movie={movies.filter((movie) => movie.rate >= rating && movie.title.toLowerCase().includes(word.trim().toLowerCase()))} />
                         <AddMovie addMovies={addMovies} /></>
                     } />
+                     {/*  SHOW THIS COMPONENT IF WE ARE IN : /:id  */}
                     <Route path="/trailer/:id" element={<Description list={movies} />} />
                 </Routes>
 
